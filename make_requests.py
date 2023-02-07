@@ -5,4 +5,11 @@
 import requests
 
 def send_http_requests(method,url,**kwargs):
+    """
+    发送请求接口封装
+    :param method:
+    :param url:
+    :param kwargs:
+    :return:
+    """
     return getattr(requests,method)(url=url,**kwargs)
